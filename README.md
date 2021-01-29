@@ -20,8 +20,8 @@
 
 If there is no problems, the previous step should produce an *export/* subdirectory at the current directory with the following contents:
 
-    - One subdirectory with the uncompressed distribution for every platform, named <game-name>_<platform>. ie. *awesome-game_linux*.
-    - One `zip/` subdirectory containing one compressed distribution for every platform, named <game-name>_<platform>_<version>. ie. *awesome-game_linux_v1.0.zip*.
+- One subdirectory with the uncompressed distribution for every platform, named <game-name>_<platform>. ie. *awesome-game_linux*.
+- One `zip/` subdirectory containing one compressed distribution for every platform, named <game-name>_<platform>_<version>. ie. *awesome-game_linux_v1.0.zip*.
 
 ## ToDo
 
