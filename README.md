@@ -4,9 +4,9 @@
 
 ## Usage
 
-1. Set the environment `GODOT_EXECUTABLE` to the Godot binary path. Sample:
+1. Set the environment `GODOT_EXECUTABLE` to the Godot v4 binary path. Sample:
 
-        export GODOT_EXECUTABLE=/opt/godot-engine/Godot_v3.2.3-stable_x11.64
+        export GODOT_EXECUTABLE=/opt/godot-engine/Godot_v4.5-stable_linux.x86_64
 
 2. In Godot, set one or more of the following export profiles
 
