@@ -16,7 +16,7 @@
 
 3. All set! Now run the script specifying a name and a version. Sample:
 
-        bash ../godot-export/godot-export.sh awesome-game v1.0
+        bash godot-export.sh -i ufo-taxi/godot-project/project.godot -o ufo-taxi/export -n ufo-taxi -v 0.1
 
 If there are no issues, the previous step should produce an *export/* subdirectory at the current directory with the following contents:
 
