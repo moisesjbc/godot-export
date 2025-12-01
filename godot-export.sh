@@ -35,7 +35,7 @@ function export_game {
     rm -r "$export_dirpath"
     mkdir -p "$export_dirpath"
     
-    (cd godot-project && $GODOT_EXECUTABLE --export "$export_preset" --output "$export_dirpath"/"$executable_filename")
+    (cd src && $GODOT_EXECUTABLE --export-release "$export_preset" --output "$export_dirpath"/"$executable_filename")
 
     zip_filename="${export_dirname}_${version}.zip"
     zip_filepath="${ZIP_DIRPATH}/${zip_filename}"
@@ -49,9 +49,9 @@ function export_game {
 }
 
 if [ -z "$platform" ]; then
-    export_game "Linux/X11" "${name}_linux" "${name}_linux"
+    export_game "Linux" "${name}_linux" "${name}_linux"
     export_game "Windows Desktop" "${name}_windows" "${name}_windows.exe"
-    export_game "HTML5" "${name}_html" "index.html" # itch.io expects an index.html in zip
+    export_game "Web" "${name}_web" "index.html" # itch.io expects an index.html in zip
 else
     export_game "$platform" "${name}_html" "index.html" # itch.io expects an index.html in zip
 fi
